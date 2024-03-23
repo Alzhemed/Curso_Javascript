@@ -37,5 +37,3 @@ function soma(a, b) {
 soma(5, 10)(0);
 const soma1 = soma(5, 5);
 soma1(10);
-
-console.log("Teste de commit")
