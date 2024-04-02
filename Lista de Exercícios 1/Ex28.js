@@ -32,5 +32,5 @@ function verificaParesEImpares(numeros = []) {
     }
 }
 
-verificaParesEImpares([2])
+verificaParesEImpares([2]);
 
