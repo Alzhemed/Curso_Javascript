@@ -20,4 +20,4 @@ function conceituaNotas(notas = []) {
     }
 }
 
-conceituaNotas([3.3, 5.6, 9.5, 8.2, "C"])
+conceituaNotas([3.3, 5.6, 9.5, 8.2, "C"]);
