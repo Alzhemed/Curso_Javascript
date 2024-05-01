@@ -1,12 +1,13 @@
 function obterMelhorEstudante(objEstudantes) {
-    arrayEstudantes = Object.entries(objEstudantes);
-    melhorEstudante = arrayEstudantes[0];
-    melhorMedia = melhorEstudante[1].reduce((notaAcumulada, notaAtual) => notaAcumulada + notaAtual)/melhorEstudante[1].length;
+    const arrayEstudantes = Object.entries(objEstudantes);
+    const calcularMedia = (notaAcumulada, notaAtual) => notaAcumulada + notaAtual
+    let melhorEstudante = arrayEstudantes[0];
+    let melhorMedia = melhorEstudante[1].reduce(calcularMedia)/melhorEstudante[1].length;
     arrayEstudantes.forEach(estudante => {
-        mediaEstudanteAtual = estudante[1].reduce((notaAcumulada, notaAtual) => notaAcumulada + notaAtual)/estudante[1].length;
+        mediaEstudanteAtual = estudante[1].reduce(calcularMedia)/estudante[1].length;
         if(mediaEstudanteAtual > melhorMedia) {
             melhorEstudante = estudante;
-            melhorMedia = melhorEstudante[1].reduce((notaAcumulada, notaAtual) => notaAcumulada + notaAtual)/melhorEstudante[1].length;
+            melhorMedia = melhorEstudante[1].reduce(calcularMedia)/melhorEstudante[1].length;
         }
     })
 
