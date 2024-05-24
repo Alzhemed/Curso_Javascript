@@ -23,7 +23,7 @@ async function buscarMCMS() {
 
 }
 
-console.log(buscarMCMS());
+buscarMCMS();
 
 /*Forma menos otimizada de resolver
 // var mCMS = axios.get(url).then(response => {

@@ -20,3 +20,5 @@ module.exports = {
     publico: true
 }
 
+console.log(module.exports);
+
